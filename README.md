@@ -176,6 +176,22 @@ footer {
 <button type="button">Submit Application</button>
 </form>
 
+</section><section id="customer-account" style="padding:25px;text-align:center;">
+<h2 style="color:gold;">👤 Customer Account</h2>
+<p>Join GÕLLY CASH GLOBAL and enjoy shopping with us.</p>
+
+<form>
+<label>Full Name</label><br>
+<input type="text" placeholder="Your full name" required><br><br>
+
+<label>Email Address</label><br>
+<input type="email" placeholder="Your email" required><br><br>
+
+<label>Phone Number</label><br>
+<input type="tel" placeholder="Your phone number" required><br><br>
+
+<button type="button">Create Account</button>
+</form>
 </section>
 
 <footer>
