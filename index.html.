@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GÕLLY CASH GLOBAL</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #080808;
+      color: white;
+      text-align: center;
+    }
+    header {
+      background: #151515;
+      padding: 25px 15px;
+      border-bottom: 2px solid gold;
+    }
+    h1 { color: gold; }
+    .hero { padding: 45px 15px; }
+    .sections {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+      padding: 20px;
+    }
+    .item {
+      background: #202020;
+      border: 1px solid gold;
+      border-radius: 12px;
+      padding: 25px 10px;
+    }
+    .item h2 { color: gold; }
+    footer {
+      padding: 20px;
+      color: #bbb;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>👑 GÕLLY CASH GLOBAL</h1>
+    <p>Shopping • Creative Services • Football</p>
+  </header>
+
+  <section class="hero">
+    <h2>Welcome to GÕLLY CASH GLOBAL</h2>
+    <p>Your world. Your marketplace. Your experience.</p>
+  </section>
+
+  <section class="sections">
+    <div class="item">
+      <h2>🛍️ Shopping</h2>
+      <p>Discover clothes, shoes, phones, bags and more.</p>
+    </div>
+    <div class="item">
+      <h2>🎨 Creative Services</h2>
+      <p>Explore our creative designs and services.</p>
+    </div>
+    <div class="item">
+      <h2>⚽ Football</h2>
+      <p>Football news, fixtures and updates.</p>
+    </div>
+    <div class="item">
+      <h2>🏪 Become a Seller</h2>
+      <p>Apply to sell after approval.</p>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 GÕLLY CASH GLOBAL
+  </footer>
+</body>
+</html>
