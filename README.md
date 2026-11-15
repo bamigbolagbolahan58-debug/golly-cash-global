@@ -136,7 +136,25 @@ footer {
 <h2>🏪 Become a Seller</h2>
 <p>Apply to join our marketplace. All sellers require approval.</p>
 <a href="#seller">Seller Information</a>
-</div>
+</div><h3 style="color:gold;">Seller Registration</h3>
+<p>Want to sell on GÕLLY CASH GLOBAL?</p>
+<p>Apply to become a seller. Every application must be reviewed and approved.</p>
+
+<form>
+<label>Full Name</label><br>
+<input type="text" placeholder="Enter your name" required><br><br>
+
+<label>Email Address</label><br>
+<input type="email" placeholder="Enter your email" required><br><br>
+
+<label>Phone Number</label><br>
+<input type="tel" placeholder="Enter your phone number" required><br><br>
+
+<label>What do you want to sell?</label><br>
+<input type="text" placeholder="Example: Clothes, shoes, phones" required><br><br>
+
+<button type="button">Submit Application</button>
+</form>
 
 </section>
 
