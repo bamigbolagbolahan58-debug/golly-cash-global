@@ -10,7 +10,7 @@
 body { 
   <nav style="background:#111;padding:15px;text-align:center;">
 <a href="#shopping" style="color:gold;margin:8px;">Shopping</a>
-<a href="#shopping-cart" style="color:gold;margin:8px;">Cart</a>
+<a href="#checkout" style="color:gold;margin:8px;">Checkout</a>
 <a href="#checkout" style="color:gold;margin:8px;">Checkout</a>
 <a href="#football" style="color:gold;margin:8px;">Football</a>
 <a href="#seller" style="color:gold;margin:8px;">Sell</a>
