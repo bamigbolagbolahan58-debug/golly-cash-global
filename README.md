@@ -192,7 +192,30 @@ footer {
 
 <button type="button">Create Account</button>
 </form>
+</section><section id="shopping-cart" style="padding:25px;text-align:center;">
+<h2 style="color:gold;">🛒 Shopping Cart</h2>
+<p>Your selected products will appear here.</p>
+
+<div id="cart-items">
+<p>Your cart is empty.</p>
+</div>
+
+<h3 id="cart-total">Total: ₦0</h3>
+
+<button onclick="clearCart()">Clear Cart</button>
 </section>
+
+<script>
+let cart = [];
+
+function clearCart() {
+  cart = [];
+  document.getElementById("cart-items").innerHTML =
+    "<p>Your cart is empty.</p>";
+  document.getElementById("cart-total").textContent =
+    "Total: ₦0";
+}
+</script>
 
 <footer>
 <p>© 2026 GÕLLY CASH GLOBAL</p>
