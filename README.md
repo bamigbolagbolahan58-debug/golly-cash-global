@@ -7,7 +7,8 @@
 <title>GÕLLY CASH GLOBAL</title>
 <style>
 * {box-sizing:border-box}
-body { <nav style="background:#111;padding:15px;text-align:center;">
+body { 
+  <nav style="background:#111;padding:15px;text-align:center;">
 <a href="#shopping" style="color:gold;margin:8px;">Shopping</a>
 <a href="#shopping-cart" style="color:gold;margin:8px;">Cart</a>
 <a href="#checkout" style="color:gold;margin:8px;">Checkout</a>
