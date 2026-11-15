@@ -105,6 +105,14 @@ footer {
     onkeyup="searchProducts()"
     style="padding:12px;width:85%;max-width:400px;border-radius:8px;">
 </div>
+  <div style="text-align:center;padding:10px;">
+  <select id="priceFilter" onchange="filterByPrice()" style="padding:12px;border-radius:8px;">
+    <option value="all">All Prices</option>
+    <option value="10000">Under ₦10,000</option>
+    <option value="20000">₦10,000 - ₦20,000</option>
+    <option value="above">Above ₦20,000</option>
+  </select>
+</div>
   <div class="categories">
 <p>👕 Clothes</p>
 <p>👟 Shoes</p>
@@ -116,7 +124,7 @@ footer {
 <p>🛒 Other Products</p>
 </div><h3 style="color:gold;">Featured Products</h3>
 
-<div class="item product">
+<div class="item product" data-price="6000">
 <h2>👕 Clothes</h2>
 <p>Sample product</p>
 <p>Price: ₦6,000</p>
@@ -124,7 +132,7 @@ footer {
 Add to Cart
 </button>
 
-<div class="item product">
+<div class="item product" data-price="15000">
 <h2>👟 Shoes</h2>
 <p>Sample product</p>
 <p>Price: ₦15,000</p>
@@ -132,7 +140,7 @@ Add to Cart
 Add to Cart
 </button>
 
-<div class="item product">
+<div class="item product" data-price="20000">
 <h2>📱 Phones</h2>
 <p>Sample product</p>
 <p>Price: ₦20,000</p>
