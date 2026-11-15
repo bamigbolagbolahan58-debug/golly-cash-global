@@ -87,6 +87,16 @@ footer {
 <section class="sections">
 
 <div class="item" id="shopping">
+  <div class="categories">
+<p>👕 Clothes</p>
+<p>👟 Shoes</p>
+<p>📱 Phones</p>
+<p>👜 Bags</p>
+<p>💎 Jewellery</p>
+<p>⌚ Watches</p>
+<p>🎒 Accessories</p>
+<p>🛒 Other Products</p>
+</div>
 <h2>🛍️ Shopping</h2>
 <p>Discover clothes, shoes, phones, bags and more.</p>
 <a href="#shopping">Explore Shopping</a>
