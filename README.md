@@ -279,7 +279,7 @@ function clearCart() {
     "Total: ₦0";
 }function searchProducts() {
   let input = document.getElementById("productSearch").value.toLowerCase();
-  let products = document.querySelectorAll(".product");
+  let products = document.querySelectorAll(".product, .categories p");
 
   products.forEach(function(product) {
     let name = product.textContent.toLowerCase();
