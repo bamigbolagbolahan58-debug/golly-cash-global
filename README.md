@@ -106,12 +106,17 @@ footer {
     style="padding:12px;width:85%;max-width:400px;border-radius:8px;">
 </div>
   <div style="text-align:center;padding:10px;">
-  <select id="priceFilter" onchange="filterByPrice()" style="padding:12px;border-radius:8px;">
+  <select id="priceFilter" onchange="filterProducts()"style="padding:12px;border-radius:8px;">
     <option value="all">All Prices</option>
     <option value="10000">Under ₦10,000</option>
     <option value="20000">₦10,000 - ₦20,000</option>
     <option value="above">Above ₦20,000</option>
   </select>
+    <select id="sortProducts" onchange="sortProductsByPrice()" style="padding:12px;border-radius:8px;">
+  <option value="default">Sort Products</option>
+  <option value="low">Lowest Price First</option>
+  <option value="high">Highest Price First</option>
+</select>
 </div>
   <div class="categories">
 <p>👕 Clothes</p>
@@ -313,6 +318,25 @@ function filterProducts() {
 
     product.style.display = show ? "" : "none";
   });
+}
+function sortProductsByPrice() {
+  let order = document.getElementById("sortProducts").value;
+  let products = Array.from(document.querySelectorAll(".product"));
+
+  if (order === "low") {
+    products.sort((a, b) =>
+      Number(a.dataset.price) - Number(b.dataset.price)
+    );
+  } else if (order === "high") {
+    products.sort((a, b) =>
+      Number(b.dataset.price) - Number(a.dataset.price)
+    );
+  }
+
+  if (products.length > 0) {
+    let parent = products[0].parentElement;
+    products.forEach(product => parent.appendChild(product));
+  }
 }
 </script>
 
