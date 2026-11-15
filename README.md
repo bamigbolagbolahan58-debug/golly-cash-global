@@ -210,7 +210,33 @@ Add to Cart
 
 <button onclick="clearCart()">Clear Cart</button>
 </section>
+<section id="checkout" style="padding:25px;text-align:center;">
+<h2 style="color:gold;">💳 Checkout</h2>
+<p>Enter your details to prepare your order.</p>
 
+<form>
+<label>Full Name</label><br>
+<input type="text" placeholder="Your full name" required><br><br>
+
+<label>Email Address</label><br>
+<input type="email" placeholder="Your email" required><br><br>
+
+<label>Phone Number</label><br>
+<input type="tel" placeholder="Your phone number" required><br><br>
+
+<label>Delivery Address</label><br>
+<textarea placeholder="Your delivery address" required></textarea><br><br>
+
+<label>Payment Method</label><br>
+<select required>
+<option value="">Choose payment method</option>
+<option>Bank Transfer</option>
+<option>Card Payment</option>
+</select><br><br>
+
+<button type="button">Prepare Order</button>
+</form>
+</section>
 <script>
 let cart = [];
 function addToCart(name, price) {
