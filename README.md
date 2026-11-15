@@ -97,6 +97,14 @@ footer {
 <section class="sections">
 
 <div class="item" id="shopping">
+  <div style="text-align:center;padding:20px;">
+  <input
+    type="text"
+    id="productSearch"
+    placeholder="Search for clothes, shoes, phones, bags..."
+    onkeyup="searchProducts()"
+    style="padding:12px;width:85%;max-width:400px;border-radius:8px;">
+</div>
   <div class="categories">
 <p>👕 Clothes</p>
 <p>👟 Shoes</p>
@@ -108,7 +116,7 @@ footer {
 <p>🛒 Other Products</p>
 </div><h3 style="color:gold;">Featured Products</h3>
 
-<div class="item">
+<div class="item product">
 <h2>👕 Clothes</h2>
 <p>Sample product</p>
 <p>Price: ₦6,000</p>
@@ -116,7 +124,7 @@ footer {
 Add to Cart
 </button>
 
-<div class="item">
+<div class="item product">
 <h2>👟 Shoes</h2>
 <p>Sample product</p>
 <p>Price: ₦15,000</p>
@@ -124,7 +132,7 @@ Add to Cart
 Add to Cart
 </button>
 
-<div class="item">
+<div class="item product">
 <h2>📱 Phones</h2>
 <p>Sample product</p>
 <p>Price: ₦20,000</p>
@@ -269,6 +277,19 @@ function clearCart() {
     "<p>Your cart is empty.</p>";
   document.getElementById("cart-total").textContent =
     "Total: ₦0";
+}function searchProducts() {
+  let input = document.getElementById("productSearch").value.toLowerCase();
+  let products = document.querySelectorAll(".product");
+
+  products.forEach(function(product) {
+    let name = product.textContent.toLowerCase();
+
+    if (name.includes(input)) {
+      product.style.display = "";
+    } else {
+      product.style.display = "none";
+    }
+  });
 }
 </script>
 
