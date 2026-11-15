@@ -130,6 +130,26 @@ footer {
 <h2>⚽ Football</h2>
 <p>Football news, fixtures and updates.</p>
 <a href="#football">Explore Football</a>
+</div><h3 style="color:gold;">Football Centre</h3>
+
+<div class="item">
+<h2>📰 Latest Football News</h2>
+<p>Stay updated with football stories from around the world.</p>
+</div>
+
+<div class="item">
+<h2>📅 Match Fixtures</h2>
+<p>Discover upcoming football matches.</p>
+</div>
+
+<div class="item">
+<h2>🏆 Match Results</h2>
+<p>Follow completed match results.</p>
+</div>
+
+<div class="item">
+<h2>🌍 League Updates</h2>
+<p>Follow leagues and competitions around the world.</p>
 </div>
 
 <div class="item" id="seller">
