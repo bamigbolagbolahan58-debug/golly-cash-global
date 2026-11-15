@@ -96,6 +96,24 @@ footer {
 <p>⌚ Watches</p>
 <p>🎒 Accessories</p>
 <p>🛒 Other Products</p>
+</div><h3 style="color:gold;">Featured Products</h3>
+
+<div class="item">
+<h2>👕 Clothes</h2>
+<p>Sample product</p>
+<p>Price: ₦6,000</p>
+</div>
+
+<div class="item">
+<h2>👟 Shoes</h2>
+<p>Sample product</p>
+<p>Price: ₦15,000</p>
+</div>
+
+<div class="item">
+<h2>📱 Phones</h2>
+<p>Sample product</p>
+<p>Price: ₦20,000</p>
 </div>
 <h2>🛍️ Shopping</h2>
 <p>Discover clothes, shoes, phones, bags and more.</p>
