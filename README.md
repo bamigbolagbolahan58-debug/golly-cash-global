@@ -299,6 +299,21 @@ function clearCart() {
     }
   });
 }
+function filterProducts() {
+  let filter = document.getElementById("priceFilter").value;
+  let products = document.querySelectorAll(".product");
+
+  products.forEach(function(product) {
+    let price = Number(product.getAttribute("data-price"));
+    let show = true;
+
+    if (filter === "10000") show = price < 10000;
+    if (filter === "20000") show = price >= 10000 && price <= 20000;
+    if (filter === "above") show = price > 20000;
+
+    product.style.display = show ? "" : "none";
+  });
+}
 </script>
 
 <footer>
