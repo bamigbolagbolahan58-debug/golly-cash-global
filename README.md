@@ -81,8 +81,11 @@ footer {
 <nav>
 <a href="#shopping">Shopping</a>
 <a href="#creative">Creative Services</a>
+<a href="#shopping-cart">Cart</a>
+<a href="#checkout">Checkout</a>
 <a href="#football">Football</a>
 <a href="#seller">Become a Seller</a>
+<a href="#account">Customer Account</a>
 </nav>
 
 <section class="hero">
