@@ -102,19 +102,25 @@ footer {
 <h2>👕 Clothes</h2>
 <p>Sample product</p>
 <p>Price: ₦6,000</p>
-</div>
+</div><button onclick="addToCart('Clothes',6000)">
+Add to Cart
+</button>
 
 <div class="item">
 <h2>👟 Shoes</h2>
 <p>Sample product</p>
 <p>Price: ₦15,000</p>
-</div>
+</div><button onclick="addToCart('Shoes',15000)">
+Add to Cart
+</button>
 
 <div class="item">
 <h2>📱 Phones</h2>
 <p>Sample product</p>
 <p>Price: ₦20,000</p>
-</div>
+</div><button onclick="addToCart('Phone',20000)">
+Add to Cart
+</button>
 <h2>🛍️ Shopping</h2>
 <p>Discover clothes, shoes, phones, bags and more.</p>
 <a href="#shopping">Explore Shopping</a>
@@ -207,7 +213,20 @@ footer {
 
 <script>
 let cart = [];
+function addToCart(name, price) {
+  cart.push({name: name, price: price});
 
+  document.getElementById("cart-items").innerHTML =
+    cart.map(item =>
+      "<p>" + item.name + " - ₦" +
+      item.price.toLocaleString() + "</p>"
+    ).join("");
+
+  let total = cart.reduce((sum, item) => sum + item.price, 0);
+
+  document.getElementById("cart-total").textContent =
+    "Total: ₦" + total.toLocaleString();
+}
 function clearCart() {
   cart = [];
   document.getElementById("cart-items").innerHTML =
